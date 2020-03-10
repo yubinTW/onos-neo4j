@@ -1,0 +1,13 @@
+#!/usr/bin/expect
+
+spawn onos localhost
+expect "*@root >"
+send "app deactivate com.yubin.yubintest\n"
+expect "Deactivated*"
+send "app uninstall com.yubin.yubintest\n"
+expect "Uninstalled*"
+
+exit
+
+
+

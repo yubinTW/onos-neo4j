@@ -1,0 +1,12 @@
+#!/usr/bin/expect
+
+spawn onos localhost
+
+expect "*@root >"
+
+send "app activate com.yubin.yubintest\n"
+expect "Activated*n"
+
+exit
+
+ 
